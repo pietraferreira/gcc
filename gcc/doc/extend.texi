@@ -21651,6 +21651,19 @@ vector intrinsic specification, which is available at the following link:
 @uref{https://github.com/riscv-non-isa/rvv-intrinsic-doc/tree/v0.11.x}.
 All of these functions are declared in the include file @file{riscv_vector.h}.
 
+@node CORE-V Built-in Functions
+@subsection CORE-V Built-in Functions
+For more information on all CORE-V built-ins, please see
+@uref{https://github.com/openhwgroup/core-v-sw/blob/master/specifications/corev-builtin-spec.md}
+
+These built-in functions are available for the CORE-V Event Load machine
+architecture. For more information on CORE-V SIMD built-ins, please see
+@uref{https://github.com/openhwgroup/core-v-sw/blob/master/specifications/corev-builtin-spec.md#listing-of-event-load-word-builtins-xcvelw}
+
+@deftypefn {Built-in Function} {uint32_t} __builtin_riscv_cv_elw_elw (uint32_t *)
+Generated assembler @code{cv.elw}
+@end deftypefn
+
 @node RX Built-in Functions
 @subsection RX Built-in Functions
 GCC supports some of the RX instructions which cannot be expressed in

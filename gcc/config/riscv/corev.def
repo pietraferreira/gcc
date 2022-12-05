@@ -1,0 +1,2 @@
+// XCVELW
+RISCV_BUILTIN (cv_elw_elw_si, "cv_elw_elw", RISCV_BUILTIN_DIRECT, RISCV_USI_FTYPE_VOID_PTR, cvelw),

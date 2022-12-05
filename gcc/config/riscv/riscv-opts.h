@@ -295,6 +295,10 @@ enum riscv_entity
    ? 0 \
    : 32 << (__builtin_popcount (riscv_zvl_flags) - 1))
 
+#define MASK_XCVELW    (1 <<  0)
+
+#define TARGET_XCVELW    ((riscv_xcv_flags & MASK_XCVELW) != 0)
+
 #define MASK_XTHEADBA      (1 << 0)
 #define MASK_XTHEADBB      (1 << 1)
 #define MASK_XTHEADBS      (1 << 2)
