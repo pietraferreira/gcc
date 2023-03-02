@@ -124,6 +124,9 @@ AVAIL (clmulr_zbc32, TARGET_ZBC && !TARGET_64BIT)
 AVAIL (clmulr_zbc64, TARGET_ZBC && TARGET_64BIT)
 AVAIL (always,     (!0))
 
+//COREV AVAIL
+AVAIL (cvalu, TARGET_XCVALU && !TARGET_64BIT)
+
 /* Construct a riscv_builtin_description from the given arguments.
 
    INSN is the name of the associated instruction pattern, without the
