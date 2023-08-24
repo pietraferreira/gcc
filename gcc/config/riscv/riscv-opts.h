@@ -319,4 +319,8 @@ enum riscv_entity
 #define TARGET_VECTOR_VLS                                                      \
   (TARGET_VECTOR && riscv_autovec_preference == RVV_SCALABLE)
 
+#define MASK_XCVALU    (1 <<  0)
+
+#define TARGET_XCVALU     ((riscv_xcv_flags & MASK_XCVALU) != 0)
+
 #endif /* ! GCC_RISCV_OPTS_H */
