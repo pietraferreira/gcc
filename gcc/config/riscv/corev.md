@@ -1,4 +1,4 @@
-;; Machine description for RISC-V MAC operations.
+;; Machine description for CORE-V MAC operations.
 ;; Copyright (C) 2023 Free Software Foundation, Inc.
 
 ;; This file is part of GCC.
@@ -16,6 +16,8 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GCC; see the file COPYING3.  If not see
 ;; <http://www.gnu.org/licenses/>.
+
+;; XCVMAC extension.
 
 (define_insn "riscv_cv_mac_mac"
   [(set (match_operand:SI 0 "register_operand" "=r")

@@ -6,122 +6,140 @@ extern int d;
 extern int e;
 extern int f;
 
-int foo(int a, int b, int c)
+int 
+foo(int a, int b, int c)
 {
   return __builtin_riscv_cv_mac_mac (a, b, c);
 }
 
-void foo0(int a, int b, int c)
+void 
+foo0(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_machhsN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_machhsN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_machhsN (a, b, c, 31);
 }
 
-void foo1(int a, int b, int c)
+void 
+foo1(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_machhsRN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_machhsRN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_machhsRN (a, b, c, 31);
 }
 
-void foo2(int a, int b, int c)
+void 
+foo2(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_machhuN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_machhuN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_machhuN (a, b, c, 31);
 }
 
-void foo3(int a, int b, int c)
+void 
+foo3(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_machhuRN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_machhuRN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_machhuRN (a, b, c, 31);
 }
 
-void foo4(int a, int b, int c)
+void 
+foo4(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_macsN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_macsN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_macsN (a, b, c, 31);
 }
 
-void foo5(int a, int b, int c)
+void 
+foo5(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_macsRN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_macsRN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_macsRN (a, b, c, 31);
 }
 
-void foo6(int a, int b, int c)
+void 
+foo6(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_macuN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_macuN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_macuN (a, b, c, 31);
 }
 
-void foo7(int a, int b, int c)
+void 
+foo7(int a, int b, int c)
 {
   d = __builtin_riscv_cv_mac_macuRN (a, b, c, 0);
   e = __builtin_riscv_cv_mac_macuRN (a, b, c, 7);
   f = __builtin_riscv_cv_mac_macuRN (a, b, c, 31);
 }
 
-int foo8(int a, int b, int c)
+int 
+foo8(int a, int b, int c)
 {
   return __builtin_riscv_cv_mac_msu (a, b, c);
 }
 
-void foo9(int a, int b)
+void 
+foo9(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulhhsN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulhhsN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulhhsN (a, b, 31);
 }
 
-void foo10(int a, int b)
+void 
+foo10(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulhhsRN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulhhsRN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulhhsRN (a, b, 31);
 }
 
-void foo11(int a, int b)
+void 
+foo11(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulhhuN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulhhuN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulhhuN (a, b, 31);
 }
 
-void foo12(int a, int b)
+void 
+foo12(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulhhuRN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulhhuRN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulhhuRN (a, b, 31);
 }
 
-void foo13(int a, int b)
+void 
+foo13(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulsN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulsN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulsN (a, b, 31);
 }
 
-void foo14(int a, int b)
+void 
+foo14(int a, int b)
 {
   d = __builtin_riscv_cv_mac_mulsN (a, b, 0);
   e = __builtin_riscv_cv_mac_mulsN (a, b, 7);
   f = __builtin_riscv_cv_mac_mulsN (a, b, 31);
 }
 
-void foo15(int a, int b)
+void 
+foo15(int a, int b)
 {
   d = __builtin_riscv_cv_mac_muluN (a, b, 0);
   e = __builtin_riscv_cv_mac_muluN (a, b, 7);
   f = __builtin_riscv_cv_mac_muluN (a, b, 31);
 }
 
-void foo16(int a, int b)
+void 
+foo16(int a, int b)
 {
   d = __builtin_riscv_cv_mac_muluRN (a, b, 0);
   e = __builtin_riscv_cv_mac_muluRN (a, b, 7);
