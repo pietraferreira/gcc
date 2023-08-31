@@ -252,6 +252,9 @@ TargetVariable
 int riscv_ztso_subext
 
 TargetVariable
+int riscv_xcv_flags
+
+TargetVariable
 int riscv_xthead_subext
 
 Enum

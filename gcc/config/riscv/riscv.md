@@ -3330,3 +3330,4 @@
 (include "thead.md")
 (include "vector.md")
 (include "zicond.md")
+(include "corev.md")
